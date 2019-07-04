@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C3B41C118FAEA4979530917 /* Pods_breivUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998CB89C46D56910BB2BD470 /* Pods_breivUITests.framework */; };
 		5A8112CE66765C860F62985F /* Pods_breivTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA052A47524D5232BAA048 /* Pods_breivTests.framework */; };
 		A5C3C27F10A97397952A14EF /* Pods_breiv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9393BCCEB077502A4EB013F /* Pods_breiv.framework */; };
-		AFD976BA22CE8E8E00145552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976B922CE8E8E00145552 /* AppDelegate.swift */; };
-		AFD976BC22CE8E8E00145552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976BB22CE8E8E00145552 /* ViewController.swift */; };
-		AFD976BF22CE8E8E00145552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD976BD22CE8E8E00145552 /* Main.storyboard */; };
-		AFD976C122CE8E8F00145552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD976C022CE8E8F00145552 /* Assets.xcassets */; };
-		AFD976C422CE8E8F00145552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD976C222CE8E8F00145552 /* LaunchScreen.storyboard */; };
+		AF434A3022CE970F00499F63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A2F22CE970F00499F63 /* LoginViewController.swift */; };
+		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
+		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
+		AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1A22CE951900FF4E21 /* Main.storyboard */; };
+		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
 		AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976CE22CE8E8F00145552 /* breivTests.swift */; };
 		AFD976DA22CE8E8F00145552 /* breivUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976D922CE8E8F00145552 /* breivUITests.swift */; };
 /* End PBXBuildFile section */
@@ -42,13 +42,13 @@
 		80E6DA10143D3B93B1B8AE9C /* Pods-breivTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivTests.debug.xcconfig"; path = "Target Support Files/Pods-breivTests/Pods-breivTests.debug.xcconfig"; sourceTree = "<group>"; };
 		998CB89C46D56910BB2BD470 /* Pods_breivUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breivUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4586D605C2E9EC1483E420 /* Pods-breivTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivTests.release.xcconfig"; path = "Target Support Files/Pods-breivTests/Pods-breivTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF434A2F22CE970F00499F63 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFA74F1B22CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFA74F1D22CE951900FF4E21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD976B622CE8E8D00145552 /* breiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFD976B922CE8E8E00145552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFD976BB22CE8E8E00145552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFD976BE22CE8E8E00145552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFD976C022CE8E8F00145552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFD976C322CE8E8F00145552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AFD976C522CE8E8F00145552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD976CA22CE8E8F00145552 /* breivTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = breivTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD976CE22CE8E8F00145552 /* breivTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breivTests.swift; sourceTree = "<group>"; };
 		AFD976D022CE8E8F00145552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,8 +109,102 @@
 				E27AE4495F531177E082E03F /* Pods-breivUITests.debug.xcconfig */,
 				540C6CEF71785EB2BBB55661 /* Pods-breivUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF434A2E22CE970000499F63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF434A2F22CE970F00499F63 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF434A3122CE97D500499F63 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AF434A3222CE97FE00499F63 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AF434A3322CE980F00499F63 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AF434A3422CE981F00499F63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF434A3522CE982D00499F63 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AF434A3622CE986400499F63 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AFA74F1F22CE951900FF4E21 /* Login */,
+				AFA74F2022CE951900FF4E21 /* OrderDetail */,
+				AFA74F1E22CE951900FF4E21 /* OrdersList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AFA74F1522CE951900FF4E21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF434A3522CE982D00499F63 /* Fonts */,
+				AFA74F1622CE951900FF4E21 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFA74F1722CE951900FF4E21 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */,
+				AFA74F1A22CE951900FF4E21 /* Main.storyboard */,
+				AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */,
+				AFA74F1D22CE951900FF4E21 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AFA74F1E22CE951900FF4E21 /* OrdersList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrdersList;
+			sourceTree = "<group>";
+		};
+		AFA74F1F22CE951900FF4E21 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AF434A2E22CE970000499F63 /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AFA74F2022CE951900FF4E21 /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrderDetail;
 			sourceTree = "<group>";
 		};
 		AFD976AD22CE8E8D00145552 = {
@@ -138,12 +232,13 @@
 		AFD976B822CE8E8D00145552 /* breiv */ = {
 			isa = PBXGroup;
 			children = (
-				AFD976B922CE8E8E00145552 /* AppDelegate.swift */,
-				AFD976BB22CE8E8E00145552 /* ViewController.swift */,
-				AFD976BD22CE8E8E00145552 /* Main.storyboard */,
-				AFD976C022CE8E8F00145552 /* Assets.xcassets */,
-				AFD976C222CE8E8F00145552 /* LaunchScreen.storyboard */,
-				AFD976C522CE8E8F00145552 /* Info.plist */,
+				AF434A3222CE97FE00499F63 /* Network */,
+				AF434A3322CE980F00499F63 /* Classes */,
+				AF434A3422CE981F00499F63 /* Extensions */,
+				AF434A3122CE97D500499F63 /* Coordinator */,
+				AF434A3622CE986400499F63 /* Features */,
+				AFA74F1522CE951900FF4E21 /* Resources */,
+				AFA74F1722CE951900FF4E21 /* SupportingFiles */,
 			);
 			path = breiv;
 			sourceTree = "<group>";
@@ -274,9 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD976C422CE8E8F00145552 /* LaunchScreen.storyboard in Resources */,
-				AFD976C122CE8E8F00145552 /* Assets.xcassets in Resources */,
-				AFD976BF22CE8E8E00145552 /* Main.storyboard in Resources */,
+				AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */,
+				AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */,
+				AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD976BC22CE8E8E00145552 /* ViewController.swift in Sources */,
-				AFD976BA22CE8E8E00145552 /* AppDelegate.swift in Sources */,
+				AF434A3022CE970F00499F63 /* LoginViewController.swift in Sources */,
+				AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,20 +519,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AFD976BD22CE8E8E00145552 /* Main.storyboard */ = {
+		AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AFD976BE22CE8E8E00145552 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AFD976C222CE8E8F00145552 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFD976C322CE8E8F00145552 /* Base */,
+				AFA74F1922CE951900FF4E21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AFA74F1A22CE951900FF4E21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA74F1B22CE951900FF4E21 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -494,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -549,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -566,7 +661,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D6VCA69GN;
-				INFOPLIST_FILE = breiv/Info.plist;
+				INFOPLIST_FILE = breiv/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +670,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breiv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -585,7 +681,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D6VCA69GN;
-				INFOPLIST_FILE = breiv/Info.plist;
+				INFOPLIST_FILE = breiv/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,7 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breiv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

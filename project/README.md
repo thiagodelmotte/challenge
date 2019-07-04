@@ -4,7 +4,7 @@
 
 ## Description
 
-- MVVM Architecture
+- MVVM-C Architecture
 - Swift 5
 - StyleGuide
 - i18n
