@@ -11,6 +11,10 @@
 		5A8112CE66765C860F62985F /* Pods_breivTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA052A47524D5232BAA048 /* Pods_breivTests.framework */; };
 		A5C3C27F10A97397952A14EF /* Pods_breiv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9393BCCEB077502A4EB013F /* Pods_breiv.framework */; };
 		AF434A3022CE970F00499F63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A2F22CE970F00499F63 /* LoginViewController.swift */; };
+		AF434A3822CE997C00499F63 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A3722CE997C00499F63 /* Api.swift */; };
+		AF434A3A22CE99C600499F63 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A3922CE99C600499F63 /* ApiRequest.swift */; };
+		AF434A3C22CEA10200499F63 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A3B22CEA10200499F63 /* Bundle.swift */; };
+		AF434A3E22CEA2B500499F63 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A3D22CEA2B500499F63 /* Reachability.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1A22CE951900FF4E21 /* Main.storyboard */; };
@@ -43,12 +47,16 @@
 		998CB89C46D56910BB2BD470 /* Pods_breivUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breivUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4586D605C2E9EC1483E420 /* Pods-breivTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivTests.release.xcconfig"; path = "Target Support Files/Pods-breivTests/Pods-breivTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF434A2F22CE970F00499F63 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF434A3722CE997C00499F63 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		AF434A3922CE99C600499F63 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		AF434A3B22CEA10200499F63 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		AF434A3D22CEA2B500499F63 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1B22CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA74F1D22CE951900FF4E21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFD976B622CE8E8D00145552 /* breiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD976B622CE8E8D00145552 /* Breiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD976CA22CE8E8F00145552 /* breivTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = breivTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD976CE22CE8E8F00145552 /* breivTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breivTests.swift; sourceTree = "<group>"; };
 		AFD976D022CE8E8F00145552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +138,8 @@
 		AF434A3222CE97FE00499F63 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AF434A3722CE997C00499F63 /* Api.swift */,
+				AF434A3922CE99C600499F63 /* ApiRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 		AF434A3322CE980F00499F63 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AF434A3D22CEA2B500499F63 /* Reachability.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -144,6 +155,7 @@
 		AF434A3422CE981F00499F63 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AF434A3B22CEA10200499F63 /* Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,7 +234,7 @@
 		AFD976B722CE8E8D00145552 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFD976B622CE8E8D00145552 /* breiv.app */,
+				AFD976B622CE8E8D00145552 /* Breiv.app */,
 				AFD976CA22CE8E8F00145552 /* breivTests.xctest */,
 				AFD976D522CE8E8F00145552 /* breivUITests.xctest */,
 			);
@@ -280,7 +292,7 @@
 			);
 			name = breiv;
 			productName = breiv;
-			productReference = AFD976B622CE8E8D00145552 /* breiv.app */;
+			productReference = AFD976B622CE8E8D00145552 /* Breiv.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AFD976C922CE8E8F00145552 /* breivTests */ = {
@@ -482,7 +494,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF434A3822CE997C00499F63 /* Api.swift in Sources */,
+				AF434A3E22CEA2B500499F63 /* Reachability.swift in Sources */,
 				AF434A3022CE970F00499F63 /* LoginViewController.swift in Sources */,
+				AF434A3A22CE99C600499F63 /* ApiRequest.swift in Sources */,
+				AF434A3C22CEA10200499F63 /* Bundle.swift in Sources */,
 				AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,7 +684,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breiv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Breiv;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -688,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breiv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Breiv;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
