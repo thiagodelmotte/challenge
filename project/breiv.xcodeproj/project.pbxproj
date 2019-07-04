@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3B41C118FAEA4979530917 /* Pods_breivUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998CB89C46D56910BB2BD470 /* Pods_breivUITests.framework */; };
+		5A8112CE66765C860F62985F /* Pods_breivTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA052A47524D5232BAA048 /* Pods_breivTests.framework */; };
+		A5C3C27F10A97397952A14EF /* Pods_breiv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9393BCCEB077502A4EB013F /* Pods_breiv.framework */; };
+		AFD976BA22CE8E8E00145552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976B922CE8E8E00145552 /* AppDelegate.swift */; };
+		AFD976BC22CE8E8E00145552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976BB22CE8E8E00145552 /* ViewController.swift */; };
+		AFD976BF22CE8E8E00145552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD976BD22CE8E8E00145552 /* Main.storyboard */; };
+		AFD976C122CE8E8F00145552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD976C022CE8E8F00145552 /* Assets.xcassets */; };
+		AFD976C422CE8E8F00145552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD976C222CE8E8F00145552 /* LaunchScreen.storyboard */; };
+		AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976CE22CE8E8F00145552 /* breivTests.swift */; };
+		AFD976DA22CE8E8F00145552 /* breivUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976D922CE8E8F00145552 /* breivUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFD976CB22CE8E8F00145552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFD976AE22CE8E8D00145552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFD976B522CE8E8D00145552;
+			remoteInfo = breiv;
+		};
+		AFD976D622CE8E8F00145552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFD976AE22CE8E8D00145552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFD976B522CE8E8D00145552;
+			remoteInfo = breiv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14B7734ADC339CD2C8C54A67 /* Pods-breiv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breiv.release.xcconfig"; path = "Target Support Files/Pods-breiv/Pods-breiv.release.xcconfig"; sourceTree = "<group>"; };
+		540C6CEF71785EB2BBB55661 /* Pods-breivUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivUITests.release.xcconfig"; path = "Target Support Files/Pods-breivUITests/Pods-breivUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80E6DA10143D3B93B1B8AE9C /* Pods-breivTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivTests.debug.xcconfig"; path = "Target Support Files/Pods-breivTests/Pods-breivTests.debug.xcconfig"; sourceTree = "<group>"; };
+		998CB89C46D56910BB2BD470 /* Pods_breivUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breivUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4586D605C2E9EC1483E420 /* Pods-breivTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivTests.release.xcconfig"; path = "Target Support Files/Pods-breivTests/Pods-breivTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFD976B622CE8E8D00145552 /* breiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD976B922CE8E8E00145552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFD976BB22CE8E8E00145552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFD976BE22CE8E8E00145552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFD976C022CE8E8F00145552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFD976C322CE8E8F00145552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFD976C522CE8E8F00145552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD976CA22CE8E8F00145552 /* breivTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = breivTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD976CE22CE8E8F00145552 /* breivTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breivTests.swift; sourceTree = "<group>"; };
+		AFD976D022CE8E8F00145552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD976D522CE8E8F00145552 /* breivUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = breivUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD976D922CE8E8F00145552 /* breivUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breivUITests.swift; sourceTree = "<group>"; };
+		AFD976DB22CE8E8F00145552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA052A47524D5232BAA048 /* Pods_breivTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breivTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD725BE8859055F6D854F7A7 /* Pods-breiv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breiv.debug.xcconfig"; path = "Target Support Files/Pods-breiv/Pods-breiv.debug.xcconfig"; sourceTree = "<group>"; };
+		C9393BCCEB077502A4EB013F /* Pods_breiv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breiv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27AE4495F531177E082E03F /* Pods-breivUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breivUITests.debug.xcconfig"; path = "Target Support Files/Pods-breivUITests/Pods-breivUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFD976B322CE8E8D00145552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C3C27F10A97397952A14EF /* Pods_breiv.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD976C722CE8E8F00145552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8112CE66765C860F62985F /* Pods_breivTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD976D222CE8E8F00145552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3B41C118FAEA4979530917 /* Pods_breivUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B1A08818B1E15C5DDF16A6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9393BCCEB077502A4EB013F /* Pods_breiv.framework */,
+				B1CA052A47524D5232BAA048 /* Pods_breivTests.framework */,
+				998CB89C46D56910BB2BD470 /* Pods_breivUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12C0A05A2748381EE601DE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD725BE8859055F6D854F7A7 /* Pods-breiv.debug.xcconfig */,
+				14B7734ADC339CD2C8C54A67 /* Pods-breiv.release.xcconfig */,
+				80E6DA10143D3B93B1B8AE9C /* Pods-breivTests.debug.xcconfig */,
+				AC4586D605C2E9EC1483E420 /* Pods-breivTests.release.xcconfig */,
+				E27AE4495F531177E082E03F /* Pods-breivUITests.debug.xcconfig */,
+				540C6CEF71785EB2BBB55661 /* Pods-breivUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFD976AD22CE8E8D00145552 = {
+			isa = PBXGroup;
+			children = (
+				AFD976B822CE8E8D00145552 /* breiv */,
+				AFD976CD22CE8E8F00145552 /* breivTests */,
+				AFD976D822CE8E8F00145552 /* breivUITests */,
+				AFD976B722CE8E8D00145552 /* Products */,
+				A12C0A05A2748381EE601DE9 /* Pods */,
+				3B1A08818B1E15C5DDF16A6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFD976B722CE8E8D00145552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFD976B622CE8E8D00145552 /* breiv.app */,
+				AFD976CA22CE8E8F00145552 /* breivTests.xctest */,
+				AFD976D522CE8E8F00145552 /* breivUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFD976B822CE8E8D00145552 /* breiv */ = {
+			isa = PBXGroup;
+			children = (
+				AFD976B922CE8E8E00145552 /* AppDelegate.swift */,
+				AFD976BB22CE8E8E00145552 /* ViewController.swift */,
+				AFD976BD22CE8E8E00145552 /* Main.storyboard */,
+				AFD976C022CE8E8F00145552 /* Assets.xcassets */,
+				AFD976C222CE8E8F00145552 /* LaunchScreen.storyboard */,
+				AFD976C522CE8E8F00145552 /* Info.plist */,
+			);
+			path = breiv;
+			sourceTree = "<group>";
+		};
+		AFD976CD22CE8E8F00145552 /* breivTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFD976CE22CE8E8F00145552 /* breivTests.swift */,
+				AFD976D022CE8E8F00145552 /* Info.plist */,
+			);
+			path = breivTests;
+			sourceTree = "<group>";
+		};
+		AFD976D822CE8E8F00145552 /* breivUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFD976D922CE8E8F00145552 /* breivUITests.swift */,
+				AFD976DB22CE8E8F00145552 /* Info.plist */,
+			);
+			path = breivUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFD976B522CE8E8D00145552 /* breiv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD976DE22CE8E8F00145552 /* Build configuration list for PBXNativeTarget "breiv" */;
+			buildPhases = (
+				AF31A73A02E8275DA8D79090 /* [CP] Check Pods Manifest.lock */,
+				AFD976B222CE8E8D00145552 /* Sources */,
+				AFD976B322CE8E8D00145552 /* Frameworks */,
+				AFD976B422CE8E8D00145552 /* Resources */,
+				0AACA3B22662D47FB1F45715 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = breiv;
+			productName = breiv;
+			productReference = AFD976B622CE8E8D00145552 /* breiv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFD976C922CE8E8F00145552 /* breivTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD976E122CE8E8F00145552 /* Build configuration list for PBXNativeTarget "breivTests" */;
+			buildPhases = (
+				8EA590AF9D892787329EAA71 /* [CP] Check Pods Manifest.lock */,
+				AFD976C622CE8E8F00145552 /* Sources */,
+				AFD976C722CE8E8F00145552 /* Frameworks */,
+				AFD976C822CE8E8F00145552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD976CC22CE8E8F00145552 /* PBXTargetDependency */,
+			);
+			name = breivTests;
+			productName = breivTests;
+			productReference = AFD976CA22CE8E8F00145552 /* breivTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFD976D422CE8E8F00145552 /* breivUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD976E422CE8E8F00145552 /* Build configuration list for PBXNativeTarget "breivUITests" */;
+			buildPhases = (
+				E93E05805D050C94347B7BC3 /* [CP] Check Pods Manifest.lock */,
+				AFD976D122CE8E8F00145552 /* Sources */,
+				AFD976D222CE8E8F00145552 /* Frameworks */,
+				AFD976D322CE8E8F00145552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD976D722CE8E8F00145552 /* PBXTargetDependency */,
+			);
+			name = breivUITests;
+			productName = breivUITests;
+			productReference = AFD976D522CE8E8F00145552 /* breivUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFD976AE22CE8E8D00145552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = breiv;
+				TargetAttributes = {
+					AFD976B522CE8E8D00145552 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					AFD976C922CE8E8F00145552 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = AFD976B522CE8E8D00145552;
+					};
+					AFD976D422CE8E8F00145552 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = AFD976B522CE8E8D00145552;
+					};
+				};
+			};
+			buildConfigurationList = AFD976B122CE8E8D00145552 /* Build configuration list for PBXProject "breiv" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFD976AD22CE8E8D00145552;
+			productRefGroup = AFD976B722CE8E8D00145552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFD976B522CE8E8D00145552 /* breiv */,
+				AFD976C922CE8E8F00145552 /* breivTests */,
+				AFD976D422CE8E8F00145552 /* breivUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFD976B422CE8E8D00145552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD976C422CE8E8F00145552 /* LaunchScreen.storyboard in Resources */,
+				AFD976C122CE8E8F00145552 /* Assets.xcassets in Resources */,
+				AFD976BF22CE8E8E00145552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD976C822CE8E8F00145552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD976D322CE8E8F00145552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AACA3B22662D47FB1F45715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-breiv/Pods-breiv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-breiv/Pods-breiv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-breiv/Pods-breiv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA590AF9D892787329EAA71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-breivTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF31A73A02E8275DA8D79090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-breiv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E93E05805D050C94347B7BC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-breivUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFD976B222CE8E8D00145552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD976BC22CE8E8E00145552 /* ViewController.swift in Sources */,
+				AFD976BA22CE8E8E00145552 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD976C622CE8E8F00145552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD976D122CE8E8F00145552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD976DA22CE8E8F00145552 /* breivUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFD976CC22CE8E8F00145552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFD976B522CE8E8D00145552 /* breiv */;
+			targetProxy = AFD976CB22CE8E8F00145552 /* PBXContainerItemProxy */;
+		};
+		AFD976D722CE8E8F00145552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFD976B522CE8E8D00145552 /* breiv */;
+			targetProxy = AFD976D622CE8E8F00145552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFD976BD22CE8E8E00145552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFD976BE22CE8E8E00145552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFD976C222CE8E8F00145552 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFD976C322CE8E8F00145552 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFD976DC22CE8E8F00145552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFD976DD22CE8E8F00145552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFD976DF22CE8E8F00145552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD725BE8859055F6D854F7A7 /* Pods-breiv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				INFOPLIST_FILE = breiv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breiv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFD976E022CE8E8F00145552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B7734ADC339CD2C8C54A67 /* Pods-breiv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				INFOPLIST_FILE = breiv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breiv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFD976E222CE8E8F00145552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E6DA10143D3B93B1B8AE9C /* Pods-breivTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				INFOPLIST_FILE = breivTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breivTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/breiv.app/breiv";
+			};
+			name = Debug;
+		};
+		AFD976E322CE8E8F00145552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4586D605C2E9EC1483E420 /* Pods-breivTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				INFOPLIST_FILE = breivTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breivTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/breiv.app/breiv";
+			};
+			name = Release;
+		};
+		AFD976E522CE8E8F00145552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27AE4495F531177E082E03F /* Pods-breivUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				INFOPLIST_FILE = breivUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breivUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = breiv;
+			};
+			name = Debug;
+		};
+		AFD976E622CE8E8F00145552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540C6CEF71785EB2BBB55661 /* Pods-breivUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				INFOPLIST_FILE = breivUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.breivUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = breiv;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFD976B122CE8E8D00145552 /* Build configuration list for PBXProject "breiv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD976DC22CE8E8F00145552 /* Debug */,
+				AFD976DD22CE8E8F00145552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD976DE22CE8E8F00145552 /* Build configuration list for PBXNativeTarget "breiv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD976DF22CE8E8F00145552 /* Debug */,
+				AFD976E022CE8E8F00145552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD976E122CE8E8F00145552 /* Build configuration list for PBXNativeTarget "breivTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD976E222CE8E8F00145552 /* Debug */,
+				AFD976E322CE8E8F00145552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD976E422CE8E8F00145552 /* Build configuration list for PBXNativeTarget "breivUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD976E522CE8E8F00145552 /* Debug */,
+				AFD976E622CE8E8F00145552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFD976AE22CE8E8D00145552 /* Project object */;
+}

@@ -1,0 +1,17 @@
+
+platform :ios, '11.0'
+
+target 'breiv' do
+  use_frameworks!
+	
+  pod 'Alamofire'
+	
+  target 'breivTests' do
+    inherit! :search_paths
+  end
+
+  target 'breivUITests' do
+    inherit! :search_paths
+  end
+
+end
