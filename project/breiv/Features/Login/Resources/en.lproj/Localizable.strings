@@ -1,0 +1,8 @@
+
+"loginUserFieldPlaceholder" = "e-mail";
+"loginPassFieldPlaceholder" = "senha";
+"loginButtonTitle" = "Acessar minha conta";
+
+"loginFormUserError" = "Verifique seu email!";
+"loginFormPassError" = "Verifique sua senha!";
+"loginFormLoader" = "Só um segundinho...";

@@ -1,5 +1,6 @@
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,6 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.setupRootController()
+        self.setupServices()
         return true
     }
     
@@ -15,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = LoginViewController()
         self.window?.makeKeyAndVisible()
+    }
+    
+    private func setupServices() {
+        IQKeyboardManager.shared.enable = true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

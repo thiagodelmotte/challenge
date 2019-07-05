@@ -5,6 +5,9 @@ target 'breiv' do
   use_frameworks!
 	
   pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyDrop'
+  pod 'SwiftSpinner'
 	
   target 'breivTests' do
     inherit! :search_paths

@@ -13,4 +13,8 @@ extension Bundle {
         return URL(string: endpoint)!
     }
     
+    var keyClientSecret: String {
+        return self.object(forInfoDictionaryKey: "KEY_CLIENT_SECRET") as! String
+    }
+    
 }
