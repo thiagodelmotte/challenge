@@ -17,7 +17,7 @@
 - Alamofire
 - Codable Protocol
 - Custom Fonts
-- Unit/UI Tests
+- Unit/UI Tests (KIF, Quick, Nimble)
 
 ## Requirements
 

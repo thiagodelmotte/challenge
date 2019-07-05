@@ -8,6 +8,12 @@ target 'breiv' do
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyDrop'
   pod 'SwiftSpinner'
+  
+  # Tests
+  pod 'Quick'
+  pod 'Nimble'
+  pod 'Nimble-Snapshots'
+  pod 'KIF'
 	
   target 'breivTests' do
     inherit! :search_paths

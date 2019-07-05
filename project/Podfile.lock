@@ -1,28 +1,57 @@
 PODS:
   - Alamofire (4.8.2)
+  - iOSSnapshotTestCase (6.0.3):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.3)
+  - iOSSnapshotTestCase/Core (6.0.3)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.3):
+    - iOSSnapshotTestCase/Core
   - IQKeyboardManagerSwift (6.3.0)
+  - KIF (3.7.7):
+    - KIF/Core (= 3.7.7)
+  - KIF/Core (3.7.7)
+  - Nimble (8.0.1)
+  - Nimble-Snapshots (7.1.0):
+    - Nimble-Snapshots/Core (= 7.1.0)
+  - Nimble-Snapshots/Core (7.1.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
+  - Quick (2.1.0)
   - SwiftSpinner (1.6.2)
   - SwiftyDrop (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
+  - KIF
+  - Nimble
+  - Nimble-Snapshots
+  - Quick
   - SwiftSpinner
   - SwiftyDrop
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - iOSSnapshotTestCase
     - IQKeyboardManagerSwift
+    - KIF
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
     - SwiftSpinner
     - SwiftyDrop
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  iOSSnapshotTestCase: 944a73f6d9676302811a86c0cf35f0e6ef5ab2a0
   IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  KIF: 6f525b18d4cca3d6445f3c5d683294e9157bd3f4
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Nimble-Snapshots: 2ec985281eef0eb9fc69a469deee851363a50d0e
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SwiftSpinner: 3a4c6dea425e5a31b908a8b1dd5dcd1ad4d96340
   SwiftyDrop: c5b306082dfbd7d6b9c1e569dcdd2ab13306e552
 
-PODFILE CHECKSUM: 937c48d4f0d5223af204b2b57324f6c6762e6794
+PODFILE CHECKSUM: f97063865137775d1daeb5162b6800493ebf9443
 
 COCOAPODS: 1.7.0

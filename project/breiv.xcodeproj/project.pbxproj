@@ -44,6 +44,8 @@
 		AF434A8122CEFCA500499F63 /* breiv.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF434A7F22CEFCA500499F63 /* breiv.xcdatamodeld */; };
 		AF434A8322CEFCEC00499F63 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8222CEFCEC00499F63 /* CacheManager.swift */; };
 		AF434A8522CEFE5600499F63 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8422CEFE5600499F63 /* SessionManager.swift */; };
+		AF434A8A22CF03AF00499F63 /* WindowHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8922CF03AF00499F63 /* WindowHelper.swift */; };
+		AF434A8D22CF075500499F63 /* LoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8C22CF075500499F63 /* LoginSpec.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1A22CE951900FF4E21 /* Main.storyboard */; };
@@ -109,6 +111,8 @@
 		AF434A8022CEFCA500499F63 /* breiv.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = breiv.xcdatamodel; sourceTree = "<group>"; };
 		AF434A8222CEFCEC00499F63 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		AF434A8422CEFE5600499F63 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		AF434A8922CF03AF00499F63 /* WindowHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHelper.swift; sourceTree = "<group>"; };
+		AF434A8C22CF075500499F63 /* LoginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSpec.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1B22CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				AF434A7722CEEFDB00499F63 /* Spinner.swift */,
 				AF434A8222CEFCEC00499F63 /* CacheManager.swift */,
 				AF434A8422CEFE5600499F63 /* SessionManager.swift */,
+				AF434A8922CF03AF00499F63 /* WindowHelper.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -307,6 +312,14 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		AF434A8B22CF074600499F63 /* LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF434A8C22CF075500499F63 /* LoginSpec.swift */,
+			);
+			path = LoginTests;
+			sourceTree = "<group>";
+		};
 		AFA74F1522CE951900FF4E21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +406,7 @@
 		AFD976CD22CE8E8F00145552 /* breivTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF434A8B22CF074600499F63 /* LoginTests */,
 				AFD976CE22CE8E8F00145552 /* breivTests.swift */,
 				AFD976D022CE8E8F00145552 /* Info.plist */,
 			);
@@ -646,6 +660,7 @@
 				AF434A3822CE997C00499F63 /* Api.swift in Sources */,
 				AF434A4F22CEDE4A00499F63 /* UIColor.swift in Sources */,
 				AF434A3E22CEA2B500499F63 /* Reachability.swift in Sources */,
+				AF434A8A22CF03AF00499F63 /* WindowHelper.swift in Sources */,
 				AF434A3022CE970F00499F63 /* LoginViewController.swift in Sources */,
 				AF434A4922CEDBAB00499F63 /* String.swift in Sources */,
 				AF434A6B22CEE07800499F63 /* UITextField.swift in Sources */,
@@ -671,6 +686,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF434A8D22CF075500499F63 /* LoginSpec.swift in Sources */,
 				AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,6 +865,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = breiv/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -869,6 +886,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D6VCA69GN;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = breiv/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -900,7 +918,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/breiv.app/breiv";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breiv.app/Breiv";
 			};
 			name = Debug;
 		};
@@ -922,7 +940,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/breiv.app/breiv";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breiv.app/Breiv";
 			};
 			name = Release;
 		};
