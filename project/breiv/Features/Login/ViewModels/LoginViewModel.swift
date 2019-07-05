@@ -34,10 +34,10 @@ class LoginViewModel {
         self.spinner?(true, "loginFormLoader".localized())
         
         AuthenticationApi.login(user, pass: pass, success: { auth in
-            print(auth.accessToken ?? "")
+            SessionManager.shared.accessToken = auth.accessToken
             self.spinner?(false, "")
         }) { (code, error, response) in
-            print(code ?? "")
+            self.showAlert?(false, "loginFormApiError".localized())
             self.spinner?(false, "")
         }
     }

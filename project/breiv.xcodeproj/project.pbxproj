@@ -41,6 +41,9 @@
 		AF434A7822CEEFDB00499F63 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A7722CEEFDB00499F63 /* Spinner.swift */; };
 		AF434A7B22CEF13900499F63 /* AuthenticationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A7A22CEF13900499F63 /* AuthenticationApi.swift */; };
 		AF434A7D22CEF59D00499F63 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A7C22CEF59D00499F63 /* AuthModel.swift */; };
+		AF434A8122CEFCA500499F63 /* breiv.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF434A7F22CEFCA500499F63 /* breiv.xcdatamodeld */; };
+		AF434A8322CEFCEC00499F63 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8222CEFCEC00499F63 /* CacheManager.swift */; };
+		AF434A8522CEFE5600499F63 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8422CEFE5600499F63 /* SessionManager.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1A22CE951900FF4E21 /* Main.storyboard */; };
@@ -103,6 +106,9 @@
 		AF434A7722CEEFDB00499F63 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		AF434A7A22CEF13900499F63 /* AuthenticationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationApi.swift; sourceTree = "<group>"; };
 		AF434A7C22CEF59D00499F63 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		AF434A8022CEFCA500499F63 /* breiv.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = breiv.xcdatamodel; sourceTree = "<group>"; };
+		AF434A8222CEFCEC00499F63 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		AF434A8422CEFE5600499F63 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1B22CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,6 +208,8 @@
 				AF434A3D22CEA2B500499F63 /* Reachability.swift */,
 				AF434A7522CEEF3C00499F63 /* Alert.swift */,
 				AF434A7722CEEFDB00499F63 /* Spinner.swift */,
+				AF434A8222CEFCEC00499F63 /* CacheManager.swift */,
+				AF434A8422CEFE5600499F63 /* SessionManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -291,6 +299,14 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		AF434A7E22CEFC8700499F63 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AF434A7F22CEFCA500499F63 /* breiv.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		AFA74F1522CE951900FF4E21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +383,7 @@
 				AF434A3422CE981F00499F63 /* Extensions */,
 				AF434A3122CE97D500499F63 /* Coordinator */,
 				AF434A3622CE986400499F63 /* Features */,
+				AF434A7E22CEFC8700499F63 /* Database */,
 				AFA74F1522CE951900FF4E21 /* Resources */,
 				AFA74F1722CE951900FF4E21 /* SupportingFiles */,
 			);
@@ -635,10 +652,13 @@
 				AF434A4222CEAE6200499F63 /* UIView+Constraints.swift in Sources */,
 				AF434A7D22CEF59D00499F63 /* AuthModel.swift in Sources */,
 				AF434A4722CEDB6800499F63 /* LoginViewModel.swift in Sources */,
+				AF434A8522CEFE5600499F63 /* SessionManager.swift in Sources */,
 				AF434A4D22CEDE2F00499F63 /* UIFont.swift in Sources */,
 				AF434A4B22CEDE0C00499F63 /* UILabel+Styles.swift in Sources */,
 				AF434A7422CEEB1000499F63 /* UIView.swift in Sources */,
+				AF434A8322CEFCEC00499F63 /* CacheManager.swift in Sources */,
 				AF434A3A22CE99C600499F63 /* ApiRequest.swift in Sources */,
+				AF434A8122CEFCA500499F63 /* breiv.xcdatamodeld in Sources */,
 				AF434A7222CEEAAB00499F63 /* UIButton.swift in Sources */,
 				AF434A3C22CEA10200499F63 /* Bundle.swift in Sources */,
 				AF434A7622CEEF3C00499F63 /* Alert.swift in Sources */,
@@ -988,6 +1008,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF434A7F22CEFCA500499F63 /* breiv.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF434A8022CEFCA500499F63 /* breiv.xcdatamodel */,
+			);
+			currentVersion = AF434A8022CEFCA500499F63 /* breiv.xcdatamodel */;
+			path = breiv.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AFD976AE22CE8E8D00145552 /* Project object */;
 }

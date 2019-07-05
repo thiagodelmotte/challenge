@@ -12,7 +12,8 @@
 - Error handling no internet connection
 - Encapsulation of third-party frameworks for easy maintenance
 - View Code
-- Endpoint in the Info.plist
+- Core Data (Internal Database)
+- Security Information in the Info.plist
 - Alamofire
 - Codable Protocol
 - Custom Fonts
