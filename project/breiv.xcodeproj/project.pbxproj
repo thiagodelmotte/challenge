@@ -48,7 +48,6 @@
 		AF434A8D22CF075500499F63 /* LoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A8C22CF075500499F63 /* LoginSpec.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
-		AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1A22CE951900FF4E21 /* Main.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
 		AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976CE22CE8E8F00145552 /* breivTests.swift */; };
 		AFD976DA22CE8E8F00145552 /* breivUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD976D922CE8E8F00145552 /* breivUITests.swift */; };
@@ -115,7 +114,6 @@
 		AF434A8C22CF075500499F63 /* LoginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSpec.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AFA74F1B22CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA74F1D22CE951900FF4E21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD976B622CE8E8D00145552 /* Breiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -333,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */,
-				AFA74F1A22CE951900FF4E21 /* Main.storyboard */,
 				AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */,
 				AFA74F1D22CE951900FF4E21 /* Info.plist */,
 			);
@@ -537,7 +534,6 @@
 				AF434A6022CEDE9800499F63 /* Roboto-Regular.ttf in Resources */,
 				AF434A6422CEDE9800499F63 /* Roboto-LightItalic.ttf in Resources */,
 				AF434A5E22CEDE9800499F63 /* Roboto-Medium.ttf in Resources */,
-				AFA74F2322CE951900FF4E21 /* Main.storyboard in Resources */,
 				AF434A5F22CEDE9800499F63 /* Roboto-Light.ttf in Resources */,
 				AF434A6222CEDE9800499F63 /* Roboto-ThinItalic.ttf in Resources */,
 				AF434A6622CEDE9800499F63 /* Roboto-BlackItalic.ttf in Resources */,
@@ -729,14 +725,6 @@
 				AFA74F1922CE951900FF4E21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		AFA74F1A22CE951900FF4E21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFA74F1B22CE951900FF4E21 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

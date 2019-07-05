@@ -77,7 +77,7 @@ class Api {
     private class func addHeaders() -> [String : String] {
         var headers = [String : String]()
         headers["Content-Type"] = "application/x-www-form-urlencoded"
-        headers["Authorization"] = ""
+        headers["Authorization"] = "OAuth \(SessionManager.shared.accessToken ?? "")"
         return headers
     }
     
