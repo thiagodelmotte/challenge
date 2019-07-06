@@ -7,16 +7,17 @@
 - MVVM-C Architecture
 - Swift 5
 - StyleGuide
+- Custom Fonts
 - i18n
 - Animations
+- View Code
 - Error handling no internet connection
 - Encapsulation of third-party frameworks for easy maintenance
-- View Code
 - Core Data (Internal Database)
 - Security Information in the Info.plist
 - Alamofire
 - Codable Protocol
-- Custom Fonts
+- Pagination with endless scroll at the order list screen
 - Unit/UI Tests (KIF, Quick, Nimble)
 
 ## Requirements

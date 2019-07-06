@@ -3,7 +3,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    private var viewModel = LoginViewModel()
+    private var viewModel: LoginViewModel
     private var eyePassType: UITextField.icon = .eye
     
     lazy var logo: UIImageView = {
@@ -37,6 +37,15 @@ class LoginViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    init(viewModel: LoginViewModel = LoginViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
