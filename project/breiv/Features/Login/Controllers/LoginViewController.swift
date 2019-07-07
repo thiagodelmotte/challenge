@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
         field.clearButtonMode = UITextField.ViewMode.whileEditing
         field.accessibilityIdentifier = "fieldEmail"
         field.accessibilityLabel = "fieldEmail"
-        field.text = "moip-test-developer@moip.com.br" // Testing...
         return field
     }()
     
@@ -32,7 +31,6 @@ class LoginViewController: UIViewController {
         field.isSecureTextEntry = true
         field.accessibilityIdentifier = "fieldPass"
         field.accessibilityLabel = "fieldPass"
-        field.text = "testemoip123" // Testing...
         return field
     }()
     
