@@ -32,10 +32,6 @@ extension String {
         return self.trimmingCharacters(in: NSCharacterSet.whitespaces)
     }
     
-    func hasWhitespaces() -> Bool {
-        return self.rangeOfCharacter(from: NSCharacterSet.whitespaces) != nil
-    }
-    
     func hasContent() -> Bool {
         return self.trim() != ""
     }

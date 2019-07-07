@@ -41,13 +41,13 @@ class LoginViewModel {
     private func authenticate(_ user: String, pass: String) {
         self.spinner?(true, "formLoader".localized(.Login))
         
-        AuthenticationApi.login(user, pass: pass, success: { auth in
+        AuthenticationApi.login(user, pass: pass, success: { [weak self] auth in
             SessionManager.shared.accessToken = auth.accessToken
-            self.spinner?(false, "")
-            self.goToOrdersList?()
-        }) { (code, error, response) in
-            self.showAlert?(false, "formApiError".localized(.Login), code)
-            self.spinner?(false, "")
+            self?.spinner?(false, "")
+            self?.goToOrdersList?()
+        }) { [weak self] (code, error, response) in
+            self?.showAlert?(false, "formApiError".localized(.Login), code)
+            self?.spinner?(false, "")
         }
     }
     

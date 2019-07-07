@@ -18,7 +18,6 @@
 		AF434A4222CEAE6200499F63 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A4122CEAE6200499F63 /* UIView+Constraints.swift */; };
 		AF434A4722CEDB6800499F63 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A4622CEDB6800499F63 /* LoginViewModel.swift */; };
 		AF434A4922CEDBAB00499F63 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A4822CEDBAB00499F63 /* String.swift */; };
-		AF434A4B22CEDE0C00499F63 /* UILabel+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A4A22CEDE0C00499F63 /* UILabel+Styles.swift */; };
 		AF434A4D22CEDE2F00499F63 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A4C22CEDE2F00499F63 /* UIFont.swift */; };
 		AF434A4F22CEDE4A00499F63 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434A4E22CEDE4A00499F63 /* UIColor.swift */; };
 		AF434A5E22CEDE9800499F63 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF434A5222CEDE9800499F63 /* Roboto-Medium.ttf */; };
@@ -114,7 +113,6 @@
 		AF434A4122CEAE6200499F63 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		AF434A4622CEDB6800499F63 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AF434A4822CEDBAB00499F63 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		AF434A4A22CEDE0C00499F63 /* UILabel+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Styles.swift"; sourceTree = "<group>"; };
 		AF434A4C22CEDE2F00499F63 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		AF434A4E22CEDE4A00499F63 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AF434A5222CEDE9800499F63 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -276,7 +274,6 @@
 				AF434A3B22CEA10200499F63 /* Bundle.swift */,
 				AF434A4122CEAE6200499F63 /* UIView+Constraints.swift */,
 				AF434A4822CEDBAB00499F63 /* String.swift */,
-				AF434A4A22CEDE0C00499F63 /* UILabel+Styles.swift */,
 				AF434A4C22CEDE2F00499F63 /* UIFont.swift */,
 				AF434A4E22CEDE4A00499F63 /* UIColor.swift */,
 				AF434A6A22CEE07800499F63 /* UITextField.swift */,
@@ -458,13 +455,6 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		AF434ADB22D2725200499F63 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		AF434ADC22D2725700499F63 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,7 +537,6 @@
 			isa = PBXGroup;
 			children = (
 				AF434ADA22D2724400499F63 /* Api */,
-				AF434ADB22D2725200499F63 /* Models */,
 				AF434ADC22D2725700499F63 /* ViewModels */,
 				AF434ADD22D2725F00499F63 /* Controllers */,
 				AF434ADF22D2726B00499F63 /* Coordinator */,
@@ -876,7 +865,6 @@
 				AF434A8522CEFE5600499F63 /* SessionManager.swift in Sources */,
 				AF434AAE22D1434100499F63 /* OrderModel.swift in Sources */,
 				AF434A4D22CEDE2F00499F63 /* UIFont.swift in Sources */,
-				AF434A4B22CEDE0C00499F63 /* UILabel+Styles.swift in Sources */,
 				AF434AB222D143DF00499F63 /* CustomerModel.swift in Sources */,
 				AF434A7422CEEB1000499F63 /* UIView.swift in Sources */,
 				AF434A8322CEFCEC00499F63 /* CacheManager.swift in Sources */,

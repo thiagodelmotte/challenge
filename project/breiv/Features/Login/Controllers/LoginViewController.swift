@@ -79,10 +79,10 @@ class LoginViewController: UIViewController {
             }
         }
         
-        self.viewModel.goToOrdersList = {
+        self.viewModel.goToOrdersList = { [weak self] in
             DispatchQueue.main.async {
                 let controller = OrdersListCoordinator().start()
-                self.present(controller, animated: true, completion: nil)
+                self?.present(controller, animated: true, completion: nil)
             }
         }
     }

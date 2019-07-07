@@ -84,13 +84,13 @@ class OrderDetailViewModel {
     func fetch() {
         self.spinner?(true, "formLoader".localized(.OrderDetail))
         
-        OrderDetailApi.fetch(id: self.orderId, success: { order in
-            self.order = order
-            self.updateScreen?()
-            self.spinner?(false, "")
-        }) { (code, error, response) in
-            self.showAlert?(false, "fetchApiError".localized(.OrderDetail), code)
-            self.spinner?(false, "")
+        OrderDetailApi.fetch(id: self.orderId, success: { [weak self] order in
+            self?.order = order
+            self?.updateScreen?()
+            self?.spinner?(false, "")
+        }) { [weak self] (code, error, response) in
+            self?.showAlert?(false, "fetchApiError".localized(.OrderDetail), code)
+            self?.spinner?(false, "")
         }
     }
     

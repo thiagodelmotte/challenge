@@ -52,9 +52,9 @@ class OrdersListViewController: UIViewController {
             }
         }
         
-        self.viewModel.updateTableView = {
+        self.viewModel.updateTableView = { [weak self] in
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                self?.tableView.reloadData()
             }
         }
         
