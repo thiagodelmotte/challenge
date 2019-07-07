@@ -71,6 +71,9 @@
 		AF434AD522D1C22700499F63 /* QuickSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD422D1C22700499F63 /* QuickSpecTests.swift */; };
 		AF434AD722D1C58900499F63 /* LoginUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD622D1C58900499F63 /* LoginUISpec.swift */; };
 		AF434AD922D1C79800499F63 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD822D1C79800499F63 /* UIBarButtonItem.swift */; };
+		AF434AE222D272AA00499F63 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE122D272AA00499F63 /* OrderDetailViewController.swift */; };
+		AF434AE422D2745200499F63 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */; };
+		AF434AE622D2756000499F63 /* OrderDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
@@ -162,6 +165,9 @@
 		AF434AD422D1C22700499F63 /* QuickSpecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpecTests.swift; sourceTree = "<group>"; };
 		AF434AD622D1C58900499F63 /* LoginUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUISpec.swift; sourceTree = "<group>"; };
 		AF434AD822D1C79800499F63 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		AF434AE122D272AA00499F63 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
+		AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailCoordinator.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -440,6 +446,58 @@
 			path = OrdersListTests;
 			sourceTree = "<group>";
 		};
+		AF434ADA22D2724400499F63 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		AF434ADB22D2725200499F63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF434ADC22D2725700499F63 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AF434ADD22D2725F00499F63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF434AE122D272AA00499F63 /* OrderDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF434ADE22D2726500499F63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF434ADF22D2726B00499F63 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AF434AE022D2727100499F63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AFA74F1522CE951900FF4E21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +547,13 @@
 		AFA74F2022CE951900FF4E21 /* OrderDetail */ = {
 			isa = PBXGroup;
 			children = (
+				AF434ADA22D2724400499F63 /* Api */,
+				AF434ADB22D2725200499F63 /* Models */,
+				AF434ADC22D2725700499F63 /* ViewModels */,
+				AF434ADD22D2725F00499F63 /* Controllers */,
+				AF434ADE22D2726500499F63 /* Views */,
+				AF434ADF22D2726B00499F63 /* Coordinator */,
+				AF434AE022D2727100499F63 /* Resources */,
 			);
 			path = OrderDetail;
 			sourceTree = "<group>";
@@ -789,6 +854,7 @@
 				AF434A9822D132A800499F63 /* UINavigationController.swift in Sources */,
 				AF434ABE22D15BFD00499F63 /* OrderCell.swift in Sources */,
 				AF434A3822CE997C00499F63 /* Api.swift in Sources */,
+				AF434AE222D272AA00499F63 /* OrderDetailViewController.swift in Sources */,
 				AF434ACE22D1983300499F63 /* OrdersListSummaryView.swift in Sources */,
 				AF434ACC22D190E400499F63 /* PaymentModel.swift in Sources */,
 				AF434A4F22CEDE4A00499F63 /* UIColor.swift in Sources */,
@@ -816,6 +882,7 @@
 				AF434A8322CEFCEC00499F63 /* CacheManager.swift in Sources */,
 				AF434A3A22CE99C600499F63 /* ApiRequest.swift in Sources */,
 				AF434A8122CEFCA500499F63 /* breiv.xcdatamodeld in Sources */,
+				AF434AE622D2756000499F63 /* OrderDetailCoordinator.swift in Sources */,
 				AF434ACA22D18B1E00499F63 /* Int.swift in Sources */,
 				AF434A7222CEEAAB00499F63 /* UIButton.swift in Sources */,
 				AF434AA822D141DC00499F63 /* OrdersListSection.swift in Sources */,
@@ -824,6 +891,7 @@
 				AF434AAA22D142A100499F63 /* OrdersListApi.swift in Sources */,
 				AF434AC222D1618100499F63 /* OrderViewModel.swift in Sources */,
 				AF434AB022D143AE00499F63 /* AmountModel.swift in Sources */,
+				AF434AE422D2745200499F63 /* OrderDetailViewModel.swift in Sources */,
 				AF434A7622CEEF3C00499F63 /* Alert.swift in Sources */,
 				AF434AC622D1866F00499F63 /* Date.swift in Sources */,
 				AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */,

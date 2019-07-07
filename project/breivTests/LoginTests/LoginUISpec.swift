@@ -26,7 +26,7 @@ class LoginUISpec: QuickSpec {
             }
             
             context("when screen loads") {
-                xit("should fill form and login") {
+                it("should fill form and login") {
                     self.viewTester.usingIdentifier("fieldEmail")?.waitForView()
                     self.tester.enterText("moip-test-developer@moip.com.br", intoViewWithAccessibilityLabel: "fieldEmail")
                     self.tester.enterText("testemoip123", intoViewWithAccessibilityLabel: "fieldPass")

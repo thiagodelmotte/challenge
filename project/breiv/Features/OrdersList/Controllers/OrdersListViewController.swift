@@ -138,15 +138,10 @@ extension OrdersListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        DispatchQueue.main.async {
-//            let serviceOrderVM = self.viewModel.serviceOrders[indexPath.row]
-//
-//            if self.viewModel.canOpenSO(serviceOrderVM) {
-//                self.navigate.execution(serviceOrderVM)
-//            }
-//
-            tableView.deselectRow(at: indexPath, animated: true)
-//        }
+//        let order = self.viewModel.orders[indexPath.row]
+        let orderDetail = OrderDetailCoordinator().start()
+        self.navigationController?.pushViewController(orderDetail, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
