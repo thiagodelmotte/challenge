@@ -67,6 +67,7 @@
 		AF434ACC22D190E400499F63 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434ACB22D190E400499F63 /* PaymentModel.swift */; };
 		AF434ACE22D1983300499F63 /* OrdersListSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434ACD22D1983300499F63 /* OrdersListSummaryView.swift */; };
 		AF434AD022D1A08200499F63 /* UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434ACF22D1A08200499F63 /* UIRefreshControl.swift */; };
+		AF434AD322D1B85100499F63 /* OrdersListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD222D1B85100499F63 /* OrdersListSpec.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
@@ -154,6 +155,7 @@
 		AF434ACB22D190E400499F63 /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		AF434ACD22D1983300499F63 /* OrdersListSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListSummaryView.swift; sourceTree = "<group>"; };
 		AF434ACF22D1A08200499F63 /* UIRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControl.swift; sourceTree = "<group>"; };
+		AF434AD222D1B85100499F63 /* OrdersListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListSpec.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -422,6 +424,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AF434AD122D1B83900499F63 /* OrdersListTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF434AD222D1B85100499F63 /* OrdersListSpec.swift */,
+			);
+			path = OrdersListTests;
+			sourceTree = "<group>";
+		};
 		AFA74F1522CE951900FF4E21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				AF434A8B22CF074600499F63 /* LoginTests */,
+				AF434AD122D1B83900499F63 /* OrdersListTests */,
 				AFD976CE22CE8E8F00145552 /* breivTests.swift */,
 				AFD976D022CE8E8F00145552 /* Info.plist */,
 			);
@@ -814,6 +825,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF434AD322D1B85100499F63 /* OrdersListSpec.swift in Sources */,
 				AF434A8D22CF075500499F63 /* LoginSpec.swift in Sources */,
 				AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */,
 			);

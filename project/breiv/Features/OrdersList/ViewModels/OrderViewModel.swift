@@ -48,7 +48,7 @@ class OrderViewModel {
         case .paid:
             return .green
         case .waiting:
-            return .yellow
+            return .yellowDark
         }
     }
     

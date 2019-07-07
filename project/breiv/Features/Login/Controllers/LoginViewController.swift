@@ -143,7 +143,7 @@ class LoginViewController: UIViewController {
     
     @objc private func login() {
         self.passField.isSecureTextEntry = true
-        self.viewModel.validateForm(self.userField.text, pass: self.passField.text)
+        self.viewModel.proceedToSignin(self.userField.text, pass: self.passField.text)
     }
     
     @objc private func eyePass() {
