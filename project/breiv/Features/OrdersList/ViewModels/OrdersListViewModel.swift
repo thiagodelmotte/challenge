@@ -5,7 +5,7 @@ import UIKit
 class OrdersListViewModel {
     
     private var ordersList: OrdersListModel
-    var firstLoad = false
+    var firstLoad = true
     var pageLoadLess = 3
     var pageLimit = 20
     var isLoading = false
@@ -13,12 +13,16 @@ class OrdersListViewModel {
     
     init(ordersList: OrdersListModel = OrdersListModel()) {
         self.ordersList = ordersList
+        self.isLoading = false
+        self.eof = false
+        self.firstLoad = true
     }
     
     var showAlert: ((Bool, String, Int?)->())?
     var spinner: ((Bool, String)->())?
     var updateTableView: (()->())?
     var endRefreshing: (()->())?
+    var startRefreshing: (()->())?
     
     var navigationTitle: String {
         return "navigationTitle".localized(.OrdersList)
@@ -50,8 +54,8 @@ class OrdersListViewModel {
         self.isLoading = true
         
         if self.firstLoad {
-            self.spinner?(true, "loader".localized(.OrdersList))
-            self.firstLoad = true
+            self.startRefreshing?()
+            self.firstLoad = false
         }
         
         var offset = 0

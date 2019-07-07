@@ -63,6 +63,14 @@ class OrdersListViewController: UIViewController {
                 self?.refresh.endRefreshing()
             }
         }
+        
+        self.viewModel.startRefreshing = { [weak self] in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                self.refresh.beginRefreshing()
+                self.tableView.setContentOffset(CGPoint(x: 0, y: -self.refresh.frame.size.height), animated: true)
+            }
+        }
     }
     
     private func configureViews() {
