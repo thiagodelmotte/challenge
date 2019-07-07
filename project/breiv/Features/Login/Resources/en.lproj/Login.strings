@@ -1,0 +1,9 @@
+
+"userFieldPlaceholder" = "e-mail";
+"passFieldPlaceholder" = "senha";
+"buttonTitle" = "Acessar minha conta";
+
+"formUserError" = "Verifique seu email!";
+"formPassError" = "Verifique sua senha!";
+"formApiError" = "Ops! Não conseguimos te conectar, vamos tentar novamente?";
+"formLoader" = "Só um segundinho...";

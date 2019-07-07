@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupRootController() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = LoginViewController()
+        self.window?.rootViewController = SessionManager.shared.isLoggedIn() ? OrdersListCoordinator().start() : LoginViewController()
         self.window?.makeKeyAndVisible()
     }
     

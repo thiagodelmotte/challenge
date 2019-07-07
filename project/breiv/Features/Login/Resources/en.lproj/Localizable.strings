@@ -1,9 +1,0 @@
-
-"loginUserFieldPlaceholder" = "e-mail";
-"loginPassFieldPlaceholder" = "senha";
-"loginButtonTitle" = "Acessar minha conta";
-
-"loginFormUserError" = "Verifique seu email!";
-"loginFormPassError" = "Verifique sua senha!";
-"loginFormApiError" = "Ops! Não conseguimos te conectar, vamos tentar novamente?";
-"loginFormLoader" = "Só um segundinho...";

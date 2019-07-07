@@ -71,4 +71,8 @@ extension UIColor {
         return UIColor(166, 166, 166, 1)
     }
     
+    class var yellow: UIColor {
+        return UIColor(224, 226, 19, 1)
+    }
+    
 }

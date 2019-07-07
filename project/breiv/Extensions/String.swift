@@ -3,8 +3,15 @@ import UIKit
 
 extension String {
     
-    func localized(_ comment: String? = nil) -> String {
-        return NSLocalizedString(self, comment: comment ?? "")
+    enum LocalizedTables: String {
+        case General
+        case Login
+        case OrdersList
+        case OrdersDetail
+    }
+    
+    func localized(_ tableName: LocalizedTables, comment: String? = nil) -> String {
+        return NSLocalizedString(self, tableName: tableName.rawValue, bundle: Bundle.main, value: "", comment: comment ?? "")
     }
     
     func generateHash() -> String {
@@ -37,6 +44,13 @@ extension String {
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", regex)
         return emailTest.evaluate(with: self)
+    }
+    
+    func dateString() -> String? {
+        if let date = Date().dateFromString(self) {
+            return date.convertToStrUsingFormatLocal(format: "dd/MM/yyyy")
+        }
+        return nil
     }
     
 }

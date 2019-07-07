@@ -60,9 +60,9 @@ class LoginViewController: UIViewController {
     }
     
     private func initViewModel() {
-        self.viewModel.showAlert = { success, message in
+        self.viewModel.showAlert = { success, message, statusCode in
             DispatchQueue.main.async {
-                Alert.banner(message, state: success ? .success : .error)
+                Alert.banner(message, state: success ? .success : .error, statusCode: statusCode)
             }
         }
         
@@ -73,6 +73,13 @@ class LoginViewController: UIViewController {
                     return
                 }
                 Spinner.show(message)
+            }
+        }
+        
+        self.viewModel.goToOrdersList = {
+            DispatchQueue.main.async {
+                let controller = OrdersListCoordinator().start()
+                self.present(controller, animated: true, completion: nil)
             }
         }
     }

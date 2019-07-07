@@ -1,0 +1,4 @@
+
+"navigationTitle" = "Pedidos";
+"loader" = "Listando seus pedidos...";
+"fetchApiError" = "Ops! Não conseguimos listar seus pedidos =(";
