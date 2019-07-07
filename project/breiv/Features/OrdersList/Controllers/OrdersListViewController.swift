@@ -67,6 +67,7 @@ class OrdersListViewController: UIViewController {
     
     private func configureViews() {
         self.title = self.viewModel.navigationTitle
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem().logout(#selector(self.logout), target: self)
         self.view.backgroundColor = .white
         self.refresh.standard(self, action: #selector(self.handleRefresh))
         
@@ -96,6 +97,10 @@ class OrdersListViewController: UIViewController {
     
     @objc func handleRefresh() {
         self.viewModel.fetchOrders(reload: true)
+    }
+    
+    @objc func logout() {
+        SessionManager.shared.logout()
     }
     
 }

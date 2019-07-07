@@ -1,5 +1,6 @@
 
 "noInternetMessage" = "Sua internet caiu =(";
+"logout" = "Sair";
 
 "orderStatusReverted" = "Revertida";
 "orderStatusPaid" = "Pago";

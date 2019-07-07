@@ -1,5 +1,6 @@
 
 import Foundation
+import UIKit
 
 class SessionManager {
     
@@ -22,6 +23,12 @@ class SessionManager {
     
     func isLoggedIn() -> Bool {
         return self.accessToken != nil
+    }
+    
+    func logout() {
+        _ = AuthModel().delete()
+        self.accessToken = nil
+        UIApplication.shared.keyWindow?.rootViewController = LoginViewController()
     }
     
 }

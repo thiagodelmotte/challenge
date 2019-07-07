@@ -70,6 +70,7 @@
 		AF434AD322D1B85100499F63 /* OrdersListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD222D1B85100499F63 /* OrdersListSpec.swift */; };
 		AF434AD522D1C22700499F63 /* QuickSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD422D1C22700499F63 /* QuickSpecTests.swift */; };
 		AF434AD722D1C58900499F63 /* LoginUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD622D1C58900499F63 /* LoginUISpec.swift */; };
+		AF434AD922D1C79800499F63 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD822D1C79800499F63 /* UIBarButtonItem.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
@@ -160,6 +161,7 @@
 		AF434AD222D1B85100499F63 /* OrdersListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListSpec.swift; sourceTree = "<group>"; };
 		AF434AD422D1C22700499F63 /* QuickSpecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpecTests.swift; sourceTree = "<group>"; };
 		AF434AD622D1C58900499F63 /* LoginUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUISpec.swift; sourceTree = "<group>"; };
+		AF434AD822D1C79800499F63 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				AF434AC522D1866F00499F63 /* Date.swift */,
 				AF434AC922D18B1E00499F63 /* Int.swift */,
 				AF434ACF22D1A08200499F63 /* UIRefreshControl.swift */,
+				AF434AD822D1C79800499F63 /* UIBarButtonItem.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -789,6 +792,7 @@
 				AF434ACE22D1983300499F63 /* OrdersListSummaryView.swift in Sources */,
 				AF434ACC22D190E400499F63 /* PaymentModel.swift in Sources */,
 				AF434A4F22CEDE4A00499F63 /* UIColor.swift in Sources */,
+				AF434AD922D1C79800499F63 /* UIBarButtonItem.swift in Sources */,
 				AF434AD022D1A08200499F63 /* UIRefreshControl.swift in Sources */,
 				AF434AC022D15EE300499F63 /* UITableView.swift in Sources */,
 				AF434A9D22D1349400499F63 /* OrdersListCoordinator.swift in Sources */,
