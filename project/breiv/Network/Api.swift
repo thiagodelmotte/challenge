@@ -15,6 +15,7 @@ class Api {
     
     enum statusCodes: Int {
         case disconnected = 12163
+        case expired = 401
     }
     
     enum endpoints {
@@ -40,6 +41,11 @@ class Api {
                 
                 guard let code = data.response?.statusCode else {
                     failure(statusCodes.disconnected.rawValue, nil, nil)
+                    return
+                }
+                guard code != 401 else {
+                    SessionManager.shared.logout()
+                    Alert.banner("", state: .error, statusCode: code)
                     return
                 }
                 

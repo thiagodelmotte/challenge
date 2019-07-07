@@ -1,5 +1,6 @@
 
 "noInternetMessage" = "Sua internet caiu =(";
+"expiredSessionMessage" = "Sua sessão expirou =(";
 "logout" = "Sair";
 
 "orderStatusReverted" = "Revertida";

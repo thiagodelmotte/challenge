@@ -17,6 +17,7 @@
 - Security Information in the Info.plist
 - Alamofire
 - Codable Protocol
+- Autologout on 401 HTTP response (session expired)
 - Pagination with endless scroll at the order list screen
 - Pull to refresh orders list
 - Unit/UI Tests (KIF, Quick, Nimble)
