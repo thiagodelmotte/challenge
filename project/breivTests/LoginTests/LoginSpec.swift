@@ -10,21 +10,6 @@ class LoginSpec: QuickSpec {
     
     override func spec() {
         
-        describe("LoginViewController") {
-            var sut: LoginViewController!
-            
-            beforeEach {
-                sut = LoginViewController()
-                WindowHelper.showInTestWindow(viewController: sut)
-            }
-            
-            context("when screen loads") {
-                it("should match snapshot") {
-                    expect(sut) == snapshot("LoginViewController")
-                }
-            }
-        }
-        
         describe("LoginViewModel") {
             context("when it is first load") {
                 it("should accessToken be nil and save it") {
@@ -34,7 +19,7 @@ class LoginSpec: QuickSpec {
                     SessionManager.shared.accessToken = "j2krkj3h23j4kh324kljh3dfd"
                 }
             }
-            
+
             context("when it is not first load") {
                 it("should keep access token saved") {
                     let accessToken = SessionManager.shared.accessToken
@@ -43,7 +28,7 @@ class LoginSpec: QuickSpec {
                     expect(accessToken).toNot(beNil())
                 }
             }
-            
+
             context("when validate login form") {
                 it("should validate email") {
                     expect(LoginViewModel().validateForm("", pass: "1234")).toNot(beTrue())
@@ -52,7 +37,7 @@ class LoginSpec: QuickSpec {
                     expect(LoginViewModel().validateForm("teste@teste", pass: "1234")).toNot(beTrue())
                     expect(LoginViewModel().validateForm("teste@teste.com.br", pass: "1234")).to(beTrue())
                 }
-                
+
                 it("should validate password") {
                     expect(LoginViewModel().validateForm("teste@teste.com.br", pass: "")).toNot(beTrue())
                     expect(LoginViewModel().validateForm("teste@teste.com.br", pass: " ")).toNot(beTrue())

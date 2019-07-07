@@ -20,7 +20,9 @@ class LoginViewController: UIViewController {
         field.autocapitalizationType = .none
         field.keyboardType = .emailAddress
         field.clearButtonMode = UITextField.ViewMode.whileEditing
-        field.text = "moip-test-developer@moip.com.br" // Testing...
+        field.accessibilityIdentifier = "fieldEmail"
+        field.accessibilityLabel = "fieldEmail"
+//        field.text = "moip-test-developer@moip.com.br" // Testing...
         return field
     }()
     
@@ -28,13 +30,16 @@ class LoginViewController: UIViewController {
         let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.isSecureTextEntry = true
-        field.text = "testemoip123" // Testing...
+        field.accessibilityIdentifier = "fieldPass"
+        field.accessibilityLabel = "fieldPass"
+//        field.text = "testemoip123" // Testing...
         return field
     }()
     
     lazy var button: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.accessibilityIdentifier = "signinButton"
         return button
     }()
     

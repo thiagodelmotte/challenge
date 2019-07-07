@@ -68,6 +68,8 @@
 		AF434ACE22D1983300499F63 /* OrdersListSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434ACD22D1983300499F63 /* OrdersListSummaryView.swift */; };
 		AF434AD022D1A08200499F63 /* UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434ACF22D1A08200499F63 /* UIRefreshControl.swift */; };
 		AF434AD322D1B85100499F63 /* OrdersListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD222D1B85100499F63 /* OrdersListSpec.swift */; };
+		AF434AD522D1C22700499F63 /* QuickSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD422D1C22700499F63 /* QuickSpecTests.swift */; };
+		AF434AD722D1C58900499F63 /* LoginUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AD622D1C58900499F63 /* LoginUISpec.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
@@ -156,6 +158,8 @@
 		AF434ACD22D1983300499F63 /* OrdersListSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListSummaryView.swift; sourceTree = "<group>"; };
 		AF434ACF22D1A08200499F63 /* UIRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControl.swift; sourceTree = "<group>"; };
 		AF434AD222D1B85100499F63 /* OrdersListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListSpec.swift; sourceTree = "<group>"; };
+		AF434AD422D1C22700499F63 /* QuickSpecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpecTests.swift; sourceTree = "<group>"; };
+		AF434AD622D1C58900499F63 /* LoginUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUISpec.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -356,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				AF434A8C22CF075500499F63 /* LoginSpec.swift */,
+				AF434AD622D1C58900499F63 /* LoginUISpec.swift */,
 			);
 			path = LoginTests;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 			children = (
 				AF434A8B22CF074600499F63 /* LoginTests */,
 				AF434AD122D1B83900499F63 /* OrdersListTests */,
+				AF434AD422D1C22700499F63 /* QuickSpecTests.swift */,
 				AFD976CE22CE8E8F00145552 /* breivTests.swift */,
 				AFD976D022CE8E8F00145552 /* Info.plist */,
 			);
@@ -825,7 +831,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF434AD522D1C22700499F63 /* QuickSpecTests.swift in Sources */,
 				AF434AD322D1B85100499F63 /* OrdersListSpec.swift in Sources */,
+				AF434AD722D1C58900499F63 /* LoginUISpec.swift in Sources */,
 				AF434A8D22CF075500499F63 /* LoginSpec.swift in Sources */,
 				AFD976CF22CE8E8F00145552 /* breivTests.swift in Sources */,
 			);
