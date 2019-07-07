@@ -14,21 +14,28 @@ class LoginViewModel {
                 "buttonTitle".localized(.Login).uppercased())
     }
     
-    func validateForm(_ email: String?, pass: String?) {
+    func proceedToSignin(_ email: String?, pass: String?) {
+        if self.validateForm(email, pass: pass) {
+            guard let email = email, let pass = pass else { return }
+            self.authenticate(email, pass: pass)
+        }
+    }
+    
+    func validateForm(_ email: String?, pass: String?) -> Bool {
         guard let email = email, email.hasContent() else {
             self.showAlert?(false, "formUserError".localized(.Login), nil)
-            return
+            return false
         }
         guard email.isValidEmail() else {
             self.showAlert?(false, "formUserError".localized(.Login), nil)
-            return
+            return false
         }
         guard let pass = pass, pass.count > 3 else {
             self.showAlert?(false, "formPassError".localized(.Login), nil)
-            return
+            return false
         }
         
-        self.authenticate(email, pass: pass)
+        return true
     }
     
     private func authenticate(_ user: String, pass: String) {
