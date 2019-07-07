@@ -26,7 +26,7 @@ class OrdersListViewController: UIViewController {
         self.initialize()
         self.initViewModel()
         self.configureTableView()
-        self.viewModel.fetchOrders()
+        self.viewModel.fetchOrders(reload: true)
     }
     
     private func initialize() {
@@ -146,6 +146,15 @@ extension OrdersListViewController: UITableViewDelegate, UITableViewDataSource {
         let summary = OrdersListSummaryView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: section.headerHeight(self.viewModel)))
         summary.setup(self.viewModel)
         return summary
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let endScrolling = scrollView.contentOffset.y + scrollView.frame.size.height
+        let end = endScrolling >= (scrollView.contentSize.height - 500)
+        
+        if end, !self.viewModel.isLoading, !self.viewModel.eof {
+            self.viewModel.fetchOrders()
+        }
     }
     
 }

@@ -5,6 +5,11 @@ import UIKit
 class OrdersListViewModel {
     
     private var ordersList: OrdersListModel
+    var firstLoad = false
+    var pageLoadLess = 3
+    var pageLimit = 20
+    var isLoading = false
+    var eof = false
     
     init(ordersList: OrdersListModel = OrdersListModel()) {
         self.ordersList = ordersList
@@ -36,20 +41,45 @@ class OrdersListViewModel {
         return String(format: "summaryBar".localized(.OrdersList), total, currency)
     }
     
+    var summaryCount: Int {
+        return self.ordersList.summary?.count ?? 0
+    }
+    
     func fetchOrders(reload: Bool = false) {
-        if !reload {
+        guard !self.isLoading else { return }
+        self.isLoading = true
+        
+        if self.firstLoad {
             self.spinner?(true, "loader".localized(.OrdersList))
+            self.firstLoad = true
         }
         
-        OrdersListApi.fetch({ [weak self] ordersList in
-            self?.ordersList = ordersList
+        var offset = 0
+        
+        if !reload {
+            offset = self.orders.count
+        }
+        
+        OrdersListApi.fetch(offset: offset, limit: self.pageLimit, success: { [weak self] ordersList in
+            if reload {
+                self?.eof = false
+                self?.ordersList = ordersList
+            } else if let orders = ordersList.orders, orders.count > 0 {
+                self?.ordersList.orders?.append(contentsOf: orders)
+                if let limitTotal = self?.summaryCount, let total = self?.orders.count, total >= limitTotal {
+                    self?.eof = true
+                }
+            }
+            
             self?.spinner?(false, "")
             self?.endRefreshing?()
             self?.updateTableView?()
+            self?.isLoading = false
         }) { [weak self] (code, error, response) in
             self?.showAlert?(false, "fetchApiError".localized(.OrdersList), code)
             self?.spinner?(false, "")
             self?.endRefreshing?()
+            self?.isLoading = false
         }
     }
     
