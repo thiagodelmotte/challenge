@@ -4,6 +4,7 @@ import UIKit
 class OrdersListViewController: UIViewController {
     
     private var viewModel: OrdersListViewModel
+    private var refresh = UIRefreshControl()
     
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -56,11 +57,18 @@ class OrdersListViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        self.viewModel.endRefreshing = { [weak self] in
+            DispatchQueue.main.async {
+                self?.refresh.endRefreshing()
+            }
+        }
     }
     
     private func configureViews() {
         self.title = self.viewModel.navigationTitle
         self.view.backgroundColor = .white
+        self.refresh.standard(self, action: #selector(self.handleRefresh))
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -81,13 +89,14 @@ class OrdersListViewController: UIViewController {
     private func configureTableView() {
         self.tableView.contentInsetAdjustmentBehavior = .never
         self.tableView.rowHeight = UITableView.automaticDimension
-//        self.tableView.separatorStyle = .none
         self.tableView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 32.0, right: 0.0)
-//        self.tableView.addSubview(self.refresh)
         self.tableView.register(OrderCell())
+        self.tableView.addSubview(self.refresh)
     }
     
-    
+    @objc func handleRefresh() {
+        self.viewModel.fetchOrders(reload: true)
+    }
     
 }
 
@@ -127,25 +136,16 @@ extension OrdersListViewController: UITableViewDelegate, UITableViewDataSource {
 //        }
     }
 
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        let section = self.viewModel.sections[section]
-//
-//        if let section = section as? ServiceOrderSectionProtocol {
-//            return section.headerHeight(self.viewModel)
-//        }
-//
-//        return 0
-//    }
-//
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let section = self.viewModel.sections[section]
-//
-//        if let section = section as? ServiceOrderSectionProtocol {
-//            let headerView = section.headerView(self.viewModel)
-//            return headerView
-//        }
-//
-//        return nil
-//    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        let section = self.viewModel.sections[section]
+        return section.headerHeight(self.viewModel)
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let section = self.viewModel.sections[section]
+        let summary = OrdersListSummaryView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: section.headerHeight(self.viewModel)))
+        summary.setup(self.viewModel)
+        return summary
+    }
     
 }

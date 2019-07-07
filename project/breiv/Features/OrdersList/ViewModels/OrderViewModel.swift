@@ -8,6 +8,7 @@ class OrderViewModel {
         case reverted
         case paid
         case waiting
+        case notPaid = "not_paid"
     }
     
     enum PaymentMethod: String {
@@ -42,7 +43,7 @@ class OrderViewModel {
         }
         
         switch statusEnum {
-        case .reverted:
+        case .reverted, .notPaid:
             return .red
         case .paid:
             return .green

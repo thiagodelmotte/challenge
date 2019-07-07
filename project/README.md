@@ -18,6 +18,7 @@
 - Alamofire
 - Codable Protocol
 - Pagination with endless scroll at the order list screen
+- Pull to refresh orders list
 - Unit/UI Tests (KIF, Quick, Nimble)
 
 ## Requirements
