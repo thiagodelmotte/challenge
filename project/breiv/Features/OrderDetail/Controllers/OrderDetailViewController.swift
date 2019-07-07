@@ -389,9 +389,10 @@ class OrderDetailViewController: UIViewController {
     }
     
     private func configureCustomerContainer() {
-        self.customerIcon.backgroundColor = .blue
+        self.customerIcon.image = UIImage(named: "headMoney")?.withRenderingMode(.alwaysTemplate)
+        self.customerIcon.tintColor = .lightGray
         
-        self.customerTitleLabel.text = "Comprador"
+        self.customerTitleLabel.text = "buyerTitle".localized(.OrderDetail)
         self.customerTitleLabel.font = .medium(ofSize: 13)
         self.customerTitleLabel.textColor = .lightGray
         
@@ -407,9 +408,10 @@ class OrderDetailViewController: UIViewController {
     }
     
     private func configureStatusContainer() {
-        self.statusDateIcon.backgroundColor = .blue
+        self.statusDateIcon.image = UIImage(named: "calendar")?.withRenderingMode(.alwaysTemplate)
+        self.statusDateIcon.tintColor = .lightGray
         
-        self.statusDateTitleLabel.text = "Criado em"
+        self.statusDateTitleLabel.text = "statusDateTitle".localized(.OrderDetail)
         self.statusDateTitleLabel.font = .medium(ofSize: 13)
         self.statusDateTitleLabel.textColor = .lightGray
         
@@ -419,7 +421,7 @@ class OrderDetailViewController: UIViewController {
         
         self.statusVerticalLineView.backgroundColor = .lightGray
         
-        self.statusTypeTitleLabel.text = "Status"
+        self.statusTypeTitleLabel.text = "statusUpdatedTitle".localized(.OrderDetail)
         self.statusTypeTitleLabel.font = .medium(ofSize: 13)
         self.statusTypeTitleLabel.textColor = .lightGray
         
@@ -436,13 +438,14 @@ class OrderDetailViewController: UIViewController {
     private func configureBillContainer() {
         self.billTopLineView.backgroundColor = .lightGray
         
-        self.billIcon.backgroundColor = .blue
+        self.billIcon.image = UIImage(named: "coin")?.withRenderingMode(.alwaysTemplate)
+        self.billIcon.tintColor = .lightGray
         
-        self.billTitleLabel.text = "Resumo Financeiro"
+        self.billTitleLabel.text = "billTitle".localized(.OrderDetail)
         self.billTitleLabel.font = .medium(ofSize: 13)
         self.billTitleLabel.textColor = .lightGray
         
-        self.billTotalTitleLabel.text = "Valor Total"
+        self.billTotalTitleLabel.text = "billTotalTitle".localized(.OrderDetail)
         self.billTotalTitleLabel.font = .regular(ofSize: 13)
         self.billTotalTitleLabel.textColor = .darkGray
         
@@ -450,7 +453,7 @@ class OrderDetailViewController: UIViewController {
         self.billTotalLabel.font = .regular(ofSize: 13)
         self.billTotalLabel.textColor = .darkGray
         
-        self.billTaxTitleLabel.text = "Taxas"
+        self.billTaxTitleLabel.text = "billTaxTitle".localized(.OrderDetail)
         self.billTaxTitleLabel.font = .regular(ofSize: 13)
         self.billTaxTitleLabel.textColor = .darkGray
         
@@ -458,7 +461,7 @@ class OrderDetailViewController: UIViewController {
         self.billTaxLabel.font = .regular(ofSize: 13)
         self.billTaxLabel.textColor = .red
         
-        self.billNetTitleLabel.text = "Meu recebimento"
+        self.billNetTitleLabel.text = "billNetTitle".localized(.OrderDetail)
         self.billNetTitleLabel.font = .regular(ofSize: 13)
         self.billNetTitleLabel.textColor = .darkGray
         
@@ -470,13 +473,14 @@ class OrderDetailViewController: UIViewController {
     private func configurePaymentContainer() {
         self.paymentTopLineView.backgroundColor = .lightGray
         
-        self.paymentIcon.backgroundColor = .blue
+        self.paymentIcon.image = UIImage(named: "pay")?.withRenderingMode(.alwaysTemplate)
+        self.paymentIcon.tintColor = .lightGray
         
-        self.paymentTitleLabel.text = "Pagamentos"
+        self.paymentTitleLabel.text = "paymentTitle".localized(.OrderDetail)
         self.paymentTitleLabel.font = .medium(ofSize: 13)
         self.paymentTitleLabel.textColor = .lightGray
         
-        self.paymentQtdLabel.text = "1 pagamento"
+        self.paymentQtdLabel.text = String(format: "paymentQtd".localized(.OrderDetail), "2")
         self.paymentQtdLabel.font = .regular(ofSize: 13)
         self.paymentQtdLabel.textColor = .darkGray
     }

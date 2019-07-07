@@ -1,0 +1,13 @@
+
+"buyerTitle" = "Comprador";
+
+"statusDateTitle" = "Criado em";
+"statusUpdatedTitle" = "Status";
+
+"billTitle" = "Resumo Financeiro";
+"billTotalTitle" = "Valor Total";
+"billTaxTitle" = "Taxas";
+"billNetTitle" = "Meu recebimento";
+
+"paymentTitle" = "Pagamentos";
+"paymentQtd" = "%@ pagamento(s)";

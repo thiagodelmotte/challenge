@@ -7,7 +7,7 @@ extension String {
         case General
         case Login
         case OrdersList
-        case OrdersDetail
+        case OrderDetail
     }
     
     func localized(_ tableName: LocalizedTables, comment: String? = nil) -> String {

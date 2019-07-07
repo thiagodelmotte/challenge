@@ -74,6 +74,7 @@
 		AF434AE222D272AA00499F63 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE122D272AA00499F63 /* OrderDetailViewController.swift */; };
 		AF434AE422D2745200499F63 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */; };
 		AF434AE622D2756000499F63 /* OrderDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */; };
+		AF434AE922D29E0A00499F63 /* OrderDetail.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF434AEB22D29E0A00499F63 /* OrderDetail.strings */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
@@ -168,6 +169,7 @@
 		AF434AE122D272AA00499F63 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
 		AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailCoordinator.swift; sourceTree = "<group>"; };
+		AF434AEA22D29E0A00499F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OrderDetail.strings; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 		AF434AE022D2727100499F63 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AF434AEB22D29E0A00499F63 /* OrderDetail.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -731,6 +734,7 @@
 				AF434A6022CEDE9800499F63 /* Roboto-Regular.ttf in Resources */,
 				AF434A6422CEDE9800499F63 /* Roboto-LightItalic.ttf in Resources */,
 				AF434A5E22CEDE9800499F63 /* Roboto-Medium.ttf in Resources */,
+				AF434AE922D29E0A00499F63 /* OrderDetail.strings in Resources */,
 				AF434A5F22CEDE9800499F63 /* Roboto-Light.ttf in Resources */,
 				AF434A6222CEDE9800499F63 /* Roboto-ThinItalic.ttf in Resources */,
 				AF434A6622CEDE9800499F63 /* Roboto-BlackItalic.ttf in Resources */,
@@ -957,6 +961,14 @@
 				AF434AB822D1534000499F63 /* en */,
 			);
 			name = General.strings;
+			sourceTree = "<group>";
+		};
+		AF434AEB22D29E0A00499F63 /* OrderDetail.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF434AEA22D29E0A00499F63 /* en */,
+			);
+			name = OrderDetail.strings;
 			sourceTree = "<group>";
 		};
 		AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */ = {

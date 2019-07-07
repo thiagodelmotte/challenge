@@ -5,3 +5,7 @@
 "orderStatusReverted" = "Revertida";
 "orderStatusPaid" = "Pago";
 "orderStatusWaiting" = "Aguardando";
+
+"paymentTypeCreditCard" = "Cartão de Crédito";
+"paymentTypeDebitCard" = "Cartão de Débito";
+"paymentTypeBankSlip" = "Boleto Bancário";
