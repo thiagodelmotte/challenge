@@ -138,10 +138,11 @@ extension OrdersListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let order = self.viewModel.orders[indexPath.row]
-        let orderDetail = OrderDetailCoordinator().start()
-        self.navigationController?.pushViewController(orderDetail, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
+        let order = self.viewModel.orders[indexPath.row]
+        guard let orderId = order.id else { return }
+        let orderDetail = OrderDetailCoordinator(with: orderId).start()
+        self.navigationController?.pushViewController(orderDetail, animated: true)
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

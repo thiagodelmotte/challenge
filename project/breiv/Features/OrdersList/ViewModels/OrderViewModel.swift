@@ -13,6 +13,7 @@ class OrderViewModel {
     
     enum PaymentMethod: String {
         case creditCard = "CREDIT_CARD"
+        case debitCard = "DEBIT_CARD"
         case bankSlip = "BOLETO"
     }
     
@@ -71,7 +72,7 @@ class OrderViewModel {
         }
         
         switch methodEnum {
-        case .creditCard:
+        case .creditCard, .debitCard:
             return "creditCard"
         case .bankSlip:
             return "barCode"

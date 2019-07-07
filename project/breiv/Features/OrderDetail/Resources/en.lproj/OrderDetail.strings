@@ -10,4 +10,7 @@
 "billNetTitle" = "Meu recebimento";
 
 "paymentTitle" = "Pagamentos";
-"paymentQtd" = "%@ pagamento(s)";
+"paymentQtd" = "%d pagamento(s)";
+
+"formLoader" = "Montando pedido...";
+"fetchApiError" = "Ops! Não conseguimos montar o pedido =(";

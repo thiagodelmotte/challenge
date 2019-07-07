@@ -310,7 +310,7 @@ class OrderDetailViewController: UIViewController {
     
     // MARK: - METHODS
     
-    init(viewModel: OrderDetailViewModel = OrderDetailViewModel()) {
+    init(viewModel: OrderDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -322,7 +322,8 @@ class OrderDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialize()
-//        self.initViewModel()
+        self.initViewModel()
+        self.viewModel.fetch()
     }
     
     private func initialize() {
@@ -331,30 +332,29 @@ class OrderDetailViewController: UIViewController {
         self.setupConstraints()
     }
     
-//    private func initViewModel() {
-//        self.viewModel.showAlert = { success, message, statusCode in
-//            DispatchQueue.main.async {
-//                Alert.banner(message, state: success ? .success : .error, statusCode: statusCode)
-//            }
-//        }
-//
-//        self.viewModel.spinner = { (show, message) in
-//            DispatchQueue.main.async {
-//                guard show else {
-//                    Spinner.hide()
-//                    return
-//                }
-//                Spinner.show(message)
-//            }
-//        }
-//
-//        self.viewModel.goToOrdersList = {
-//            DispatchQueue.main.async {
-//                let controller = OrdersListCoordinator().start()
-//                self.present(controller, animated: true, completion: nil)
-//            }
-//        }
-//    }
+    private func initViewModel() {
+        self.viewModel.showAlert = { success, message, statusCode in
+            DispatchQueue.main.async {
+                Alert.banner(message, state: success ? .success : .error, statusCode: statusCode)
+            }
+        }
+
+        self.viewModel.spinner = { (show, message) in
+            DispatchQueue.main.async {
+                guard show else {
+                    Spinner.hide()
+                    return
+                }
+                Spinner.show(message)
+            }
+        }
+        
+        self.viewModel.updateScreen = {
+            DispatchQueue.main.async {
+                self.initialize()
+            }
+        }
+    }
     
     // MARK: - CONFIGURE VIEWS
     
@@ -371,19 +371,19 @@ class OrderDetailViewController: UIViewController {
     private func configureBasicInfoContainer() {
         self.basicInfoContainer.backgroundColor = .grayMedium
         
-        self.amountLabel.text = "R$ 100,00"
+        self.amountLabel.text = self.viewModel.amount
         self.amountLabel.font = .medium(ofSize: 18)
         self.amountLabel.textColor = .blue
         
-        self.transactionLabel.text = "jshfwhdfskjfhskjfhdkjh"
+        self.transactionLabel.text = self.viewModel.ownId
         self.transactionLabel.font = .regular(ofSize: 12)
         self.transactionLabel.textColor = .darkGray
         
-        self.operationTypeLabel.text = "Cartão de Crédito"
+        self.operationTypeLabel.text = self.viewModel.lastPaymentType
         self.operationTypeLabel.font = .regular(ofSize: 13)
         self.operationTypeLabel.textColor = .darkGray
         
-        self.idLabel.text = "tyjhtoiyhjtyiohjtyoi"
+        self.idLabel.text = self.viewModel.id
         self.idLabel.font = .regular(ofSize: 12)
         self.idLabel.textColor = .darkGray
     }
@@ -396,11 +396,11 @@ class OrderDetailViewController: UIViewController {
         self.customerTitleLabel.font = .medium(ofSize: 13)
         self.customerTitleLabel.textColor = .lightGray
         
-        self.customerNickLabel.text = "thiago_le"
+        self.customerNickLabel.text = self.viewModel.customerName
         self.customerNickLabel.font = .regular(ofSize: 13)
         self.customerNickLabel.textColor = .darkGray
         
-        self.customerEmailLabel.text = "thiago.delmotte@gmail.com"
+        self.customerEmailLabel.text = self.viewModel.customerEmail
         self.customerEmailLabel.font = .regular(ofSize: 13)
         self.customerEmailLabel.textColor = .darkGray
         
@@ -415,7 +415,7 @@ class OrderDetailViewController: UIViewController {
         self.statusDateTitleLabel.font = .medium(ofSize: 13)
         self.statusDateTitleLabel.textColor = .lightGray
         
-        self.statusDateLabel.text = "03/08/2018"
+        self.statusDateLabel.text = self.viewModel.createdAt
         self.statusDateLabel.font = .regular(ofSize: 13)
         self.statusDateLabel.textColor = .darkGray
         
@@ -425,14 +425,14 @@ class OrderDetailViewController: UIViewController {
         self.statusTypeTitleLabel.font = .medium(ofSize: 13)
         self.statusTypeTitleLabel.textColor = .lightGray
         
-        self.statusUpdatedLabel.text = "03/08/2018"
+        self.statusUpdatedLabel.text = self.viewModel.updatedAt
         self.statusUpdatedLabel.font = .regular(ofSize: 13)
         self.statusUpdatedLabel.textColor = .darkGray
         
-        self.statusFlagLabel.text = "NÃO PAGO"
+        self.statusFlagLabel.text = self.viewModel.statusFormatted
         self.statusFlagLabel.font = .regular(ofSize: 13)
-        self.statusFlagLabel.textColor = .red
-        self.statusFlagLabel.layer.borderColor = UIColor.red.cgColor
+        self.statusFlagLabel.textColor = self.viewModel.statusColor
+        self.statusFlagLabel.layer.borderColor = self.viewModel.statusColor.cgColor
     }
     
     private func configureBillContainer() {
@@ -449,7 +449,7 @@ class OrderDetailViewController: UIViewController {
         self.billTotalTitleLabel.font = .regular(ofSize: 13)
         self.billTotalTitleLabel.textColor = .darkGray
         
-        self.billTotalLabel.text = "+ R$ 100,00"
+        self.billTotalLabel.text = self.viewModel.paid
         self.billTotalLabel.font = .regular(ofSize: 13)
         self.billTotalLabel.textColor = .darkGray
         
@@ -457,7 +457,7 @@ class OrderDetailViewController: UIViewController {
         self.billTaxTitleLabel.font = .regular(ofSize: 13)
         self.billTaxTitleLabel.textColor = .darkGray
         
-        self.billTaxLabel.text = "- R$ 4,99"
+        self.billTaxLabel.text = self.viewModel.fees
         self.billTaxLabel.font = .regular(ofSize: 13)
         self.billTaxLabel.textColor = .red
         
@@ -465,7 +465,7 @@ class OrderDetailViewController: UIViewController {
         self.billNetTitleLabel.font = .regular(ofSize: 13)
         self.billNetTitleLabel.textColor = .darkGray
         
-        self.billNetLabel.text = "= R$ 95,01"
+        self.billNetLabel.text = self.viewModel.liquid
         self.billNetLabel.font = .regular(ofSize: 13)
         self.billNetLabel.textColor = .darkGray
     }
@@ -480,7 +480,7 @@ class OrderDetailViewController: UIViewController {
         self.paymentTitleLabel.font = .medium(ofSize: 13)
         self.paymentTitleLabel.textColor = .lightGray
         
-        self.paymentQtdLabel.text = String(format: "paymentQtd".localized(.OrderDetail), "2")
+        self.paymentQtdLabel.text = self.viewModel.paymentsCount
         self.paymentQtdLabel.font = .regular(ofSize: 13)
         self.paymentQtdLabel.textColor = .darkGray
     }

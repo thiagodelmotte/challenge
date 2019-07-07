@@ -21,7 +21,11 @@ extension Date {
         let formatter = DateFormatter()
         formatter.dateFormat = format ?? "yyyy-MM-dd'T'HH:mm:ss-SSSS"
         formatter.timeZone = TimeZone(identifier: "UTC")
-         return formatter.date(from: dateString)
+        if let date = formatter.date(from: dateString) {
+            return date
+        }
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS-SS"
+        return formatter.date(from: dateString)
     }
     
 }

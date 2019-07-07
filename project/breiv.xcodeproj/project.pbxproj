@@ -75,6 +75,7 @@
 		AF434AE422D2745200499F63 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */; };
 		AF434AE622D2756000499F63 /* OrderDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */; };
 		AF434AE922D29E0A00499F63 /* OrderDetail.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF434AEB22D29E0A00499F63 /* OrderDetail.strings */; };
+		AF434AED22D2A18B00499F63 /* OrderDetailApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF434AEC22D2A18B00499F63 /* OrderDetailApi.swift */; };
 		AFA74F2122CE951900FF4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1622CE951900FF4E21 /* Assets.xcassets */; };
 		AFA74F2222CE951900FF4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA74F1822CE951900FF4E21 /* LaunchScreen.storyboard */; };
 		AFA74F2422CE951900FF4E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */; };
@@ -170,6 +171,7 @@
 		AF434AE322D2745200499F63 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
 		AF434AE522D2756000499F63 /* OrderDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailCoordinator.swift; sourceTree = "<group>"; };
 		AF434AEA22D29E0A00499F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OrderDetail.strings; sourceTree = "<group>"; };
+		AF434AEC22D2A18B00499F63 /* OrderDetailApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailApi.swift; sourceTree = "<group>"; };
 		AFA74F1622CE951900FF4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA74F1922CE951900FF4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA74F1C22CE951900FF4E21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 		AF434ADA22D2724400499F63 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				AF434AEC22D2A18B00499F63 /* OrderDetailApi.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -476,13 +479,6 @@
 				AF434AE122D272AA00499F63 /* OrderDetailViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AF434ADE22D2726500499F63 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		AF434ADF22D2726B00499F63 /* Coordinator */ = {
@@ -554,7 +550,6 @@
 				AF434ADB22D2725200499F63 /* Models */,
 				AF434ADC22D2725700499F63 /* ViewModels */,
 				AF434ADD22D2725F00499F63 /* Controllers */,
-				AF434ADE22D2726500499F63 /* Views */,
 				AF434ADF22D2726B00499F63 /* Coordinator */,
 				AF434AE022D2727100499F63 /* Resources */,
 			);
@@ -863,6 +858,7 @@
 				AF434ACC22D190E400499F63 /* PaymentModel.swift in Sources */,
 				AF434A4F22CEDE4A00499F63 /* UIColor.swift in Sources */,
 				AF434AD922D1C79800499F63 /* UIBarButtonItem.swift in Sources */,
+				AF434AED22D2A18B00499F63 /* OrderDetailApi.swift in Sources */,
 				AF434AD022D1A08200499F63 /* UIRefreshControl.swift in Sources */,
 				AF434AC022D15EE300499F63 /* UITableView.swift in Sources */,
 				AF434A9D22D1349400499F63 /* OrdersListCoordinator.swift in Sources */,
